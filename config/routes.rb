@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :movies
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+#after adding movies we have GET /tasks
+# GET /movies/:id
+# POST /movies
+# PATCH/PUT /movies/:id
+# DELETE /movies/:id
+
+# can make custom tasks eg
+# get '/movies/recentlyreleased', to: 'movies#recentlyreleased'
+
+# Additional routes can be defined here
 end
